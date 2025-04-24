@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 1</title>
+  <style>
+    .task1 li:nth-child(odd) {
+      font-weight: bold;
+    }
+
+    .task1 li:nth-child(4n) {
+      color: red;
+    }
+
+    .task2 tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+  
+      .task2 tr:nth-child(3) {
+        background-color: yellowgreen; 
+        font-weight: bold;
+      }
+
+      .task3 .box {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+        background: #ccc;
+        text-align: center;
+        line-height: 60px;
+      }
+  
+      .task3 .box:first-child {
+        border: 2px solid black;
+      }
+  
+      .task3 .box:nth-child(3n) {
+        background-color: olivedrab;
+      }
+
+      .task4 p:nth-child(2) {
+        color:gold;
+        font-style: italic;
+      }
+
+      section :nth-child(2n+1) {
+        background: lightyellow;
+      }
+      
+      section p:nth-of-type(2n+1) {
+        font-weight: bold;
+      }
+
+      .hover-list li:nth-child(2n):hover {
+        background-color: lightcoral;
+        color: white;
+        cursor: pointer;
+      }
+
+      .inverse div:not(:nth-child(2)) {
+        background-color: #eee;
+      }
+  </style>
+</head>
+<body>
+
+<h1>1. List Items</h1>
+<ul class="task1">
+  <li>Apple</li>
+  <li>Banana</li>
+  <li>Cherry</li>
+  <li>Date</li>
+  <li>Elderberry</li>
+  <li>Fig</li>
+</ul>
+
+<h1>2. Table Rows</h1>
+<table class="task2" border="1">
+    <tr><td>Row 1</td></tr>
+    <tr><td>Row 2</td></tr>
+    <tr><td>Row 3</td></tr>
+    <tr><td>Row 4</td></tr>
+    <tr><td>Row 5</td></tr>
+  </table>
+  <h1>3. Grid of Boxes</h1>
+  <div class="task3">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+  </div>
+  <h1>4. Nested Elements</h1>
+  <section class="task4">
+    <p>Intro</p>
+    <p>Details</p>
+  </section>
+  
+  <section class="task4">
+    <p>Overview</p>
+    <p>Stats</p>
+  </section>
+  <h1>🌟Bonus</h1>
+  <section>
+    <h2>Advanced</h2>
+    <p>Antriksh</p>
+    <p>Sandesh</p>
+    <span>ASM</span>
+    <p>Manwadkar</p>
+  </section>
+  <h2>Combine with hover</h2>
+  <ul class="hover-list">
+    <li>SVPT</li>
+    <li>PACE</li>
+    <li>ITM</li>
+  </ul>
+  <h2>For Inverse</h2>
+  <div class="inverse">
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+    <div>Item 4</div>
+  </div>
+  
+</body>
+</html>
